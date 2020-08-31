@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+    <style>
+      .alert {
+        background: green;
+        padding: 1rem;
+        border-radius: 5px;
+        color: white;
+        margin: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>IRR Calculator App</h3>
+        <p> La TIR puede utilizarse como indicador de la rentabilidad
+            de un proyecto: a mayor TIR, mayor rentabilidad. </p> 
+            
+        <p> Esta calculadora te permite calcular la TIR basada en el flujo de caja, inversiones
+            y retiros, en acciones de una compañía. Los flujos incluyen los dividendos
+            generados por las acciones entre los periodos.</p>
+
+        <p>Para completar el formulario debes tener a la mano fecha de las inversiones m/d/y
+            o retiros, el número de acciones en cada transacción y el precio de la acción
+            para cada día. <p/>
+
+    </div>
+
+    <!-- Form -->
+    <div class="container">
+      <form action="/send" method="POST">
+
+        <label for="Number One">Día de consulta </label>
+        <input
+          type="text"
+          placeholder="Fecha m/d/y"
+          class="u-full-width"
+          name="dia_con"
+        />
+
+        <div class="row">
+            <div class="col">
+              <input class="input border" type="text" placeholder="fecha de ingreso m/d/y" name="fecha_ing">
+            </div>
+            <div class="col">
+              <input class="input border" type="text" placeholder="número de acciones" name="numero_ac">
+            </div>
+            <div class="col">
+              <input class="input border" type="text" placeholder="valor de la accción" name="valor_ac">
+            </div>
+            <div class="col">
+                <select class="input border" type="text" placeholder="operación" name="operacion">
+                    <option value="inversion">Inversión</option>
+                    <option value="retiro">Retiro</option>
+            </div>
+        </div>
+        <input type="submit" value="Calcular" id="calc_btn" />
+        <br />
+        <div class="alert">
+          {{ sum }}
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
