@@ -21,7 +21,7 @@
   </head>
   <body>
     <div class="container">
-      <h3>IRR Calculator App</h3>
+      <h3> TIR Calculator App</h3>
         <p> La TIR puede utilizarse como indicador de la rentabilidad
             de un proyecto: a mayor TIR, mayor rentabilidad. </p> 
             
@@ -46,27 +46,82 @@
           class="u-full-width"
           name="dia_con"
         />
-
-        <div class="row">
-            <div class="col">
-              <input class="input border" type="text" placeholder="fecha de ingreso m/d/y" name="fecha_ing">
+        <label for="Number One">Transacciones</label>
+        <div class="">
+            <div class="">
+              <input class="input border" type="text" placeholder="fecha de ingreso m/d/y" name="fecha_ing1">
             </div>
             <div class="col">
-              <input class="input border" type="text" placeholder="número de acciones" name="numero_ac">
+              <input class="input border" type="text" placeholder="número de acciones" name="numero_ac1">
             </div>
             <div class="col">
-              <input class="input border" type="text" placeholder="valor de la accción" name="valor_ac">
+              <input class="input border" type="text" placeholder="valor de la accción" name="valor_ac1">
             </div>
             <div class="col">
-                <select class="input border" type="text" placeholder="operación" name="operacion">
+                <select class="input border" type="text" placeholder="operación" name="operacion1">
                     <option value="inversion">Inversión</option>
                     <option value="retiro">Retiro</option>
             </div>
         </div>
+
+        <label for="Number One">Transacción 2</label>
+
+        <div class="">
+            <div class="">
+              <input class="input border" type="text" placeholder="fecha de ingreso m/d/y" name="fecha_ing2">
+            </div>
+            <div class="col">
+              <input class="input border" type="text" placeholder="número de acciones" name="numero_ac2">
+            </div>
+            <div class="col">
+              <input class="input border" type="text" placeholder="valor de la accción" name="valor_ac2">
+            </div>
+            <div class="col">
+                <select class="input border" type="text" placeholder="operación" name="operacion2">
+                    <option value="inversion">Inversión</option>
+                    <option value="retiro">Retiro</option>
+            </div></br>
+        </div>
+        <label for="Number One">Transacción 3</label>
+        <div class="in-row">
+            <div class="col">
+              <input class="input border" type="text" placeholder="fecha de ingreso m/d/y" name="fecha_ing3">
+            </div>
+            <div class="col">
+              <input class="input border" type="text" placeholder="número de acciones" name="numero_ac3">
+            </div>
+            <div class="col">
+              <input class="input border" type="text" placeholder="valor de la accción" name="valor_ac3">
+            </div>
+            <div class="col">
+                <select class="input border" type="text" placeholder="operación" name="operacion3">
+                    <option value="inversion">Inversión</option>
+                    <option value="retiro">Retiro</option>
+            </div>
+        </div>
+
+        <label for="Number One">Transacción 4</label>
+        <div class="in-row">
+            <div class="col">
+              <input class="input border" type="text" placeholder="fecha de ingreso m/d/y" name="fecha_ing4">
+            </div>
+            <div class="col">
+              <input class="input border" type="text" placeholder="número de acciones" name="numero_ac4">
+            </div>
+            <div class="col">
+              <input class="input border" type="text" placeholder="valor de la accción" name="valor_ac4">
+            </div>
+            <div class="col">
+                <select class="input border" type="text" placeholder="operación" name="operacion4">
+                    <option value="inversion">Inversión</option>
+                    <option value="retiro">Retiro</option>
+            </div>
+        </div>
+
         <input type="submit" value="Calcular" id="calc_btn" />
         <br />
         <div class="alert">
-          {{ sum }}
+          {{ result }}
         </div>
       </form>
     </div>
