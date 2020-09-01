@@ -31,6 +31,3 @@ flask run
 - Las casillas permiten cualquier clase de input lo que para una mejora se tienen que implementar casillas con verificación que impidan el error humano.
 
 - Para el calculo de la TIR está colocando en desorden los flujos lo que influye circunstancialmente en el resultado.
-
-
-
